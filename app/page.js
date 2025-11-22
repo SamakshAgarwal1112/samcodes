@@ -33,7 +33,6 @@ export default function Home() {
 
   return (
     <div className="min-h-full flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 px-4">
-      {/* Code Editor Section */}
       <div className="w-full lg:w-1/2 max-w-2xl">
         <div className="bg-vscode-sidebar border border-vscode-border rounded-lg overflow-hidden shadow-2xl">
           <div className="bg-vscode-titlebar px-4 py-2 flex items-center gap-2 border-b border-vscode-border">
@@ -91,7 +90,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Info Section */}
       <div className="w-full lg:w-1/2 max-w-xl space-y-6 animate-fade-in">
         <div>
           <h1 className="text-4xl md:text-6xl font-bold text-vscode-white mb-2">

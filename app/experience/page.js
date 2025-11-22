@@ -141,7 +141,6 @@ export default function Experience() {
         ))}
       </div>
 
-      {/* Education Section */}
       <div className="mt-12 space-y-4">
         <h2 className="text-3xl font-bold text-vscode-white">
           Education <span className="text-vscode-green">_</span>
@@ -166,7 +165,6 @@ export default function Experience() {
         </div>
       </div>
 
-      {/* Community Section */}
       <div className="mt-12 space-y-4">
         <h2 className="text-3xl font-bold text-vscode-white">
           Community <span className="text-vscode-green">_</span>

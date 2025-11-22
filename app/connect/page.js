@@ -87,7 +87,6 @@ export default function Connect() {
         </p>
       </div>
 
-      {/* Contact Information */}
       <div className="space-y-4">
         <h2 className="text-2xl font-bold text-vscode-white">Contact Information</h2>
         <div className="grid gap-4 md:grid-cols-2">
@@ -115,7 +114,6 @@ export default function Connect() {
         </div>
       </div>
 
-      {/* Social Links */}
       <div className="space-y-4">
         <h2 className="text-2xl font-bold text-vscode-white">Social Media</h2>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
@@ -141,7 +139,6 @@ export default function Connect() {
         </div>
       </div>
 
-      {/* CP Profiles */}
       <div className="space-y-4">
         <h2 className="text-2xl font-bold text-vscode-white">
           Competitive Programming Profiles
@@ -169,7 +166,6 @@ export default function Connect() {
         </div>
       </div>
 
-      {/* CTA */}
       <div className="bg-gradient-to-r from-vscode-accent/20 to-vscode-blue/20 border border-vscode-accent rounded-lg p-8 text-center">
         <h3 className="text-2xl font-bold text-vscode-white mb-3">
           Let's Work Together!

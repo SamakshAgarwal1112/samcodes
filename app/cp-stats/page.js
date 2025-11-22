@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { VscLoading, VscTrophy, VscFlame } from 'react-icons/vsc';
+import { VscLoading, VscGraph, VscFlame } from 'react-icons/vsc';
 
 export default function CPStats() {
   const [stats, setStats] = useState({
@@ -10,7 +10,6 @@ export default function CPStats() {
   });
 
   useEffect(() => {
-    // Fetch LeetCode stats
     fetch('/api/cp-stats/leetcode')
       .then((res) => res.json())
       .then((data) => setStats((prev) => ({ 
@@ -22,7 +21,6 @@ export default function CPStats() {
         leetcode: { loading: false, data: null, error: error.message } 
       })));
 
-    // Fetch Codeforces stats
     fetch('/api/cp-stats/codeforces')
       .then((res) => res.json())
       .then((data) => setStats((prev) => ({ 
@@ -34,7 +32,6 @@ export default function CPStats() {
         codeforces: { loading: false, data: null, error: error.message } 
       })));
 
-    // Fetch CodeChef stats
     fetch('/api/cp-stats/codechef')
       .then((res) => res.json())
       .then((data) => setStats((prev) => ({ 
@@ -61,7 +58,7 @@ export default function CPStats() {
             @{username}
           </a>
         </div>
-        <VscTrophy className={color} size={32} />
+        <VscGraph className={color} size={32} />
       </div>
 
       {loading ? (
