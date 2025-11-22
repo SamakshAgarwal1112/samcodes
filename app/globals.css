@@ -1,26 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --color-vscode-bg: #1e1e1e;
+  --color-vscode-sidebar: #252526;
+  --color-vscode-titlebar: #323233;
+  --color-vscode-editor: #1e1e1e;
+  --color-vscode-line: #2d2d30;
+  --color-vscode-accent: #007acc;
+  --color-vscode-accentHover: #1e90ff;
+  --color-vscode-blue: #569cd6;
+  --color-vscode-green: #4ec9b0;
+  --color-vscode-yellow: #dcdcaa;
+  --color-vscode-orange: #ce9178;
+  --color-vscode-purple: #c586c0;
+  --color-vscode-red: #f48771;
+  --color-vscode-pink: #d16d9e;
+  --color-vscode-cyan: #4fc1ff;
+  --color-vscode-white: #d4d4d4;
+  --color-vscode-gray: #858585;
+  --color-vscode-lightGray: #cccccc;
+  --color-vscode-border: #3e3e42;
+  --color-vscode-hover: #2a2d2e;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4e4e4e;
+}
+
+/* VSCode Theme */
+[data-theme='vscode-dark'] {
+  --bg-primary: #1e1e1e;
+  --bg-secondary: #252526;
+  --bg-titlebar: #323233;
+  --text-primary: #d4d4d4;
+  --text-secondary: #858585;
+  --accent: #007acc;
+  --border: #3e3e42;
+}
+
+/* Code syntax highlighting */
+.syntax-keyword { color: #569cd6; }
+.syntax-string { color: #ce9178; }
+.syntax-function { color: #dcdcaa; }
+.syntax-variable { color: #9cdcfe; }
+.syntax-comment { color: #6a9955; }
+.syntax-number { color: #b5cea8; }
+.syntax-operator { color: #d4d4d4; }
+.syntax-type { color: #4ec9b0; }
+.syntax-property { color: #9cdcfe; }
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse-slow {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
 }
