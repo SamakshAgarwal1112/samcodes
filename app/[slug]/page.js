@@ -3,17 +3,16 @@ import { db } from '@/app/lib/firebase';
 import { collection, query, where, getDocs } from 'firebase/firestore';
 
 export default async function SlugRedirect({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
 
-  // Protected routes that should not be redirected
   const PROTECTED_ROUTES = ['shortener', 'projects', 'experience', 'blogs', 'cp-stats', 'connect', 'api'];
+
+  let redirectUrl = '/';
   
   if (PROTECTED_ROUTES.includes(slug)) {
-    redirect('/');
+    redirect(redirectUrl);
   }
-
   try {
-    // Query Firestore for the slug
     const q = query(collection(db, 'urls'), where('slug', '==', slug));
     const querySnapshot = await getDocs(q);
 
@@ -21,14 +20,13 @@ export default async function SlugRedirect({ params }) {
       const urlDoc = querySnapshot.docs[0];
       const originalUrl = urlDoc.data().originalUrl;
       
-      // Redirect to the original URL
-      redirect(originalUrl);
-    } else {
-      // Slug not found, redirect to home
-      redirect('/');
+      redirectUrl = originalUrl.startsWith('http')
+        ? originalUrl
+        : `https://${originalUrl}`;
     }
   } catch (error) {
     console.error('Error fetching slug:', error);
-    redirect('/');
+  } finally {
+    redirect(redirectUrl)
   }
 }
