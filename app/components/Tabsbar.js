@@ -1,7 +1,6 @@
 'use client';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { VscClose } from 'react-icons/vsc';
 
 export default function Tabsbar() {
   const pathname = usePathname();
@@ -13,6 +12,7 @@ export default function Tabsbar() {
     { name: 'blogs.js', path: '/blogs', icon: '📝' },
     { name: 'cp-stats.js', path: '/cp-stats', icon: '🏆' },
     { name: 'connect.js', path: '/connect', icon: '📧' },
+    { name: 'shortener.js', path: '/shortener', icon: '🔗' },
   ];
 
   return (

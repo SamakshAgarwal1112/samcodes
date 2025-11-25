@@ -172,7 +172,7 @@ export default function CPStats() {
 
       <div className="text-center text-vscode-gray text-sm mt-6">
         <code className="bg-vscode-titlebar px-3 py-2 rounded">
-          // Stats updated in real-time from official APIs
+          NOTE: The Above Stats are updated in real-time from official APIs
         </code>
       </div>
     </div>

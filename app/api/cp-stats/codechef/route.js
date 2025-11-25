@@ -27,10 +27,10 @@ export async function GET() {
     const highestRatingText = $('.rating-header .rating-number').eq(1).text().trim();
     const maxRating = parseInt(highestRatingText) || rating;
 
-    const stars = $('.rating-star').length;
+    const stars = $('.rating-star span').length;
     let title = null;
     if (stars > 0) {
-      title = `${stars} Star${stars > 1 ? 's' : ''}`;
+      title = `${stars} Star`;
     }
 
     return NextResponse.json({
