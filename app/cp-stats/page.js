@@ -164,7 +164,7 @@ export default function CPStats() {
           <li className="flex items-start">
             <span className="text-vscode-green mr-2">▸</span>
             <span className="text-vscode-lightGray">
-              Built TicketChain - Decentralized event ticketing platform using Web3
+              <span className='text-vscode-orange'>Most Notable Contributor</span> of GitLab 18.6 Release - Active Open Source Contributor
             </span>
           </li>
         </ul>

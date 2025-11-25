@@ -15,7 +15,7 @@ export default function Experience() {
         'Spearheaded the design and implementation of RESTful HTTP APIs using Django REST Framework, integrating Redis caching to decrease database load by 35%.',
       ],
       tech: ['Next.js', 'Django', 'PostgreSQL', 'AWS', 'Redis', 'Docker'],
-      certificate: '#',
+      certificate: 'https://drive.google.com/file/d/1FpJYZNy0e1Wn81S2uicSBYRGzf08_35x/view?usp=sharing',
     },
     {
       company: 'Government of Odisha',
@@ -30,7 +30,7 @@ export default function Experience() {
         'Contributed to a government-facing energy monitoring dashboard under academic supervision, ensuring scalable and maintainable code.',
       ],
       tech: ['React', 'TypeScript', 'Node.js', 'Express', 'Flask', 'PostgreSQL'],
-      website: '#',
+      website: 'https://14.139.241.222:8003/',
     },
     {
       company: 'Iden',
