@@ -43,6 +43,16 @@ body {
   border-radius: 4px;
 }
 
+.bg-vscode-sidebar::-webkit-scrollbar, .codebox-bar::-webkit-scrollbar {
+  height: 0.8px;
+  cursor: scroll;
+}
+
+.bg-vscode-sidebar::-webkit-scrollbar-thumb, .codebox-bar::-webkit-scrollbar-thumb {
+  background: #888;      /* color */
+  border-radius: 1px;
+}
+
 ::-webkit-scrollbar-thumb:hover {
   background: #4e4e4e;
 }

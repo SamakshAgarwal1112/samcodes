@@ -18,7 +18,7 @@ export default function ClientLayout({ children }) {
       <div className="flex h-[calc(100vh-60px)]">
         <Sidebar />
         <Explorer />
-        <div className="flex-1 flex flex-col">
+        <div className="flex-1 flex flex-col overflow-x-hidden">
           <Tabsbar />
           <main className="flex-1 overflow-y-auto p-4 md:p-8">
             {children}

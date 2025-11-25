@@ -16,12 +16,12 @@ export default function Tabsbar() {
   ];
 
   return (
-    <div className="bg-vscode-sidebar border-b border-vscode-border flex overflow-x-auto">
+    <div className="bg-vscode-sidebar border-b border-vscode-border flex overflow-x-scroll">
       {tabs.map((tab) => (
         <Link
           key={tab.path}
           href={tab.path}
-          className={`flex items-center gap-2 px-4 py-2 text-sm border-r border-vscode-border hover:bg-vscode-hover transition-colors ${
+          className={`flex items-center gap-2 px-4 py-2 text-[10px] md:text-xs xl:text-sm border-r border-vscode-border hover:bg-vscode-hover transition-colors ${
             pathname === tab.path
               ? 'bg-vscode-bg text-vscode-white border-t-2 border-t-vscode-accent'
               : 'text-vscode-gray'

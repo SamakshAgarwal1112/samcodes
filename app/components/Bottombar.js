@@ -9,11 +9,11 @@ export default function Bottombar() {
           <VscGithubInverted size={14} />
           <span>main</span>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="sm:flex hidden items-center gap-1">
           <VscError size={14} />
           <span>0</span>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="sm:flex hidden items-center gap-1">
           <VscWarning size={14} />
           <span>0</span>
         </div>

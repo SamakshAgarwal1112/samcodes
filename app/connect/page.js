@@ -1,5 +1,5 @@
 'use client';
-import { VscMail, VscGithub, VscTwitter, VscCallOutgoing } from 'react-icons/vsc';
+import { VscMail, VscGithub, VscTwitter } from 'react-icons/vsc';
 import { FaLinkedin, FaGitlab } from 'react-icons/fa';
 import { SiLeetcode, SiCodechef, SiCodeforces } from 'react-icons/si';
 
@@ -11,13 +11,6 @@ export default function Connect() {
       value: 'agarwalsamaksh11@gmail.com',
       link: 'mailto:agarwalsamaksh11@gmail.com',
       color: 'text-vscode-red',
-    },
-    {
-      icon: VscCallOutgoing,
-      label: 'Phone',
-      value: '+91 8979177005',
-      link: 'tel:+918979177005',
-      color: 'text-vscode-green',
     },
   ];
 
@@ -97,14 +90,14 @@ export default function Connect() {
               className="bg-vscode-sidebar border border-vscode-border rounded-lg p-6 hover:border-vscode-accent transition-all hover:shadow-lg hover:shadow-vscode-accent/20 group"
               data-testid={`contact-${index}`}
             >
-              <div className="flex items-center gap-4">
+              <div className="flex flex-col sm:flex-row items-center gap-4">
                 <contact.icon
                   className={`${contact.color} group-hover:scale-110 transition-transform`}
                   size={32}
                 />
                 <div>
-                  <p className="text-sm text-vscode-gray">{contact.label}</p>
-                  <p className="text-lg text-vscode-white font-semibold">
+                  <p className="text-[8px] xs:text-xs sm:text-sm hidden sm:block text-vscode-gray">{contact.label}</p>
+                  <p className="text-xs xs:text-sm sm:text-lg text-vscode-white font-semibold">
                     {contact.value}
                   </p>
                 </div>
@@ -131,7 +124,7 @@ export default function Connect() {
                 size={40}
               />
               <p className="text-sm text-vscode-gray mb-1">{social.label}</p>
-              <p className="text-sm text-vscode-white font-semibold">
+              <p className="text-sm lg:text-[10px] text-vscode-white font-semibold">
                 @{social.username}
               </p>
             </a>
@@ -166,7 +159,7 @@ export default function Connect() {
         </div>
       </div>
 
-      <div className="bg-gradient-to-r from-vscode-accent/20 to-vscode-blue/20 border border-vscode-accent rounded-lg p-8 text-center">
+      <div className="bg-linear-to-r from-vscode-accent/20 to-vscode-blue/20 border border-vscode-accent rounded-lg p-8 text-center">
         <h3 className="text-2xl font-bold text-vscode-white mb-3">
           Let's Work Together!
         </h3>

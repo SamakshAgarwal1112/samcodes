@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className='w-full'>
       <body className="bg-vscode-bg text-vscode-white font-mono overflow-hidden h-screen">
         <ClientLayout>{children}</ClientLayout>
       </body>

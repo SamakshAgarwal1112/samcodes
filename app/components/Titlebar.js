@@ -10,7 +10,7 @@ export default function Titlebar() {
           <div className="w-3 h-3 rounded-full bg-yellow-500 hover:bg-yellow-600 cursor-pointer" />
           <div className="w-3 h-3 rounded-full bg-green-500 hover:bg-green-600 cursor-pointer" />
         </div>
-        <span className="text-sm text-vscode-white">Samaksh Agarwal - Portfolio</span>
+        <span className="text-xs sm:text-sm text-vscode-white">Samaksh Agarwal - Portfolio</span>
       </div>
       <div className="flex items-center gap-1">
         <button className="p-2 hover:bg-vscode-hover text-vscode-white">

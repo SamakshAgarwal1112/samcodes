@@ -27,9 +27,9 @@ export default function Sidebar() {
           }`}
           title={label}
         >
-          <Icon size={24} />
+          <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
           {pathname === path && (
-            <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-vscode-accent" />
+            <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-vscode-accent" />
           )}
         </Link>
       ))}

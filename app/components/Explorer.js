@@ -19,7 +19,7 @@ export default function Explorer() {
   ];
 
   return (
-    <div className="w-[240px] bg-vscode-sidebar border-r border-vscode-border flex-col hidden md:flex">
+    <div className="w-60 bg-vscode-sidebar border-r border-vscode-border flex-col hidden lg:flex">
       <div className="p-2 text-xs text-vscode-gray uppercase tracking-wider">Explorer</div>
       <div>
         <button
